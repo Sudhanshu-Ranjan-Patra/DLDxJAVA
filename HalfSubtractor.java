@@ -33,11 +33,11 @@ public class HalfSubtractor {
         int borrow = (~A) & B;  // Borrow = NOT A AND B
 
         System.out.println("\n<-<-- Half Subtractor Output -->->\n");
-        System.out.println("++===========================++");
-        System.out.println("||  A  |  B  |  SUM  | CARRY ||");
-        System.out.println("||---------------------------||");
-        System.out.println("||  "+A+"  |  "+B+"  |   "+diff+"   |   "+borrow+"   ||");
-        System.out.println("++===========================++");
+        System.out.println("++============================++");
+        System.out.println("||  A  |  B  | Diff. | Borrow ||");
+        System.out.println("||----------------------------||");
+        System.out.println("||  "+A+"  |  "+B+"  |   "+diff+"   |   "+borrow+"    ||");
+        System.out.println("++============================++");
 
         sc.close();
     }
