@@ -34,9 +34,17 @@ class EvenParity4 {
             System.out.print(msg[i] + " ");
         }
 
-        System.out.println("\nLength of message code(n)   : 4");
-        System.out.println("Number of parity bit(k)     : 3");
-        System.out.println("Length of Hamming Code(n+k) : 7");
+        int n = msg.length;
+        int k = 0;
+
+        while(Math.pow(n, k)<(n+k+1)){
+            k++;
+        }
+        
+        int l = n+k;
+        System.out.println("\nLength of message code(n)   : "+n);
+        System.out.println("Number of parity bit(k)     : "+k);
+        System.out.println("Length of Hamming Code(n+k) : "+l);
 
         int Hamming[] = new int[7];
         int p1=0,p2=0,p3=0;
@@ -49,12 +57,12 @@ class EvenParity4 {
         Hamming[1] = p2;
         Hamming[3] = p3;
 
-        int n = 0;
+        int m = 0;
         for (int i = 0; i <= 6; i++) {
             if(i == 0 || i == 1 || i == 3){
                 continue;
             }
-                Hamming[i] = msg[n++];
+                Hamming[i] = msg[m++];
             
         }
 
