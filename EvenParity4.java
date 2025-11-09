@@ -46,7 +46,7 @@ class EvenParity4 {
         System.out.println("Number of parity bit(k)     : "+k);
         System.out.println("Length of Hamming Code(n+k) : "+l);
 
-        int Hamming[] = new int[7];
+        int Hamming[] = new int[n];
         int p1=0,p2=0,p3=0;
 
         p1 = (msg[0] + msg[1] + msg[3]) % 2;
